@@ -32,7 +32,10 @@ Details:
 10: displaying the agenda with each place’s opening hours and distance each you have to travel.
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 output:
+
 Enter which country do you want to go: canada
 
 Enter which city do you want to go: toronto

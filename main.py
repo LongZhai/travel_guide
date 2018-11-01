@@ -149,7 +149,7 @@ finds hotels nearby perfect accommodation location
 (this function prints hotel names without price information)
 '''
 def find_hotel(lat, lng):
-    gmaps = googlemaps.Client(key='AIzaSyCIKt1Y6CFaVVSww_kN7VZSUT6Z2lPKDD4')
+    gmaps = googlemaps.Client(key='your key')
     result = gmaps.places(query='hotel toronto ca', location={'lat': lat, 'lng': lng}, radius=5000)
     print("the hotel", result)
 
@@ -163,7 +163,7 @@ def find_place(query):
     periods = 'None'
     website = 'None'
     phone_number = 'None'
-    gmaps = googlemaps.Client(key='AIzaSyCIKt1Y6CFaVVSww_kN7VZSUT6Z2lPKDD4')
+    gmaps = googlemaps.Client(key='your_key')
     # search the place by its name and return ID and geometry
     result = gmaps.find_place(input=[query], input_type='textquery', fields=['place_id', 'geometry'])
     place_id = result['candidates'][0]['place_id']
@@ -191,7 +191,7 @@ parameter-> list : places list
 return_value-> string tuple : (distance, duration)
 '''
 def googel_travel_guide(places_list):
-    gmaps = googlemaps.Client(key='AIzaSyCIKt1Y6CFaVVSww_kN7VZSUT6Z2lPKDD4')
+    gmaps = googlemaps.Client(key='your_key')
     waypoints = ""
     length = len(places_list)
     if length > 2:
